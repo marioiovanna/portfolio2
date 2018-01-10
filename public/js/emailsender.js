@@ -43,7 +43,7 @@ $(document).ready(function () {
                     .css('color', '#b2b2b2')
                     .css('font-weight', 'normal');
 
-                $.get('http://localhost:3000/send', {name: name, subject: subject, text: text}, function (data) {
+                $.get('https://localhost:3000/send', {name: name, subject: subject, text: text}, function (data) {
 
                     if (data === 'sent') {
                         $('#message_ok').empty().html('Thanks for contact me ' + name + ' !');
